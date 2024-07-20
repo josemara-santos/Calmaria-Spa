@@ -119,7 +119,7 @@
             </div>
             <form action="." class="container__contato--form">
                 <div class="container__contato--form-conteudo">
-                    <h5 class="container__contato--form-conteudo-titulo">Entre em contato</h5>
+                    <h5 id="titulo-contato" class="container__contato--form-conteudo-titulo">Entre em contato</h5>
                     <p class="container__contato--form-conteudo-texto">Reserve seu horário, tire dúvidas ou proponha
                         sugestões, nosso
                         canal é aberto para
@@ -132,19 +132,19 @@
                     <input type="email" placeholder="Digite seu email" id="email" name="email" required>
                     <label for="telefone">Telefone</label>
                     <input type="text" placeholder="(XX) XXXX-XXXX" id="telefone" name="telefone" required>
-                    <fieldset>
+                    <fieldset aria-labelledby="titulo-contato">
                         <legend class="container__contato--inputs--titulo">Prefere contato por:</legend>
                         <div class="container__contato--inputs--div">
                             <div>
-                                <input type="radio" id="ligacao" name="ligacao">
+                                <input type="radio" id="ligacao" name="contato">
                                 <label for="ligacao">Ligação</label>
                             </div>
                             <div>
-                                <input type="radio" id="whatsapp" name="whatsapp">
+                                <input type="radio" id="whatsapp" name="contato">
                                 <label for="whatsapp">WhatsApp</label>
                             </div>
                             <div>
-                                <input type="radio" id="email-contato" name="email-contato">
+                                <input type="radio" id="email-contato" name="contato">
                                 <label for="email-contato">Email</label>
                             </div>
                         </div>
